@@ -4,9 +4,9 @@
   "tabs": false,
   "semi": true,
   "trailingComma": "none",
-  "singleQuote": true,
+  "singleQuote": false,
   "quoteProps": "as-needed",
   "bracketSpacing": true,
   "arrowParens": "always",
-  "endOfLine": "lf"
+  "endOfLine": "auto"
 }

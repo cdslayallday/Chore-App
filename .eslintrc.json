@@ -26,7 +26,12 @@
     ],
     "rules": {
         // Prettier
-        "prettier/prettier": "error",
+        "prettier/prettier": [
+            "error",
+            {
+              "endOfLine": "auto"
+            }
+          ],
         // Typescript
         "no-use-before-define": "off",
         "import/prefer-default-export": "warn",
@@ -39,10 +44,10 @@
         "react/button-has-type": 0,
         "react/no-children-prop": 0,
         "react/jsx-props-no-spreading": 0,
-        "react/function-component-definition": ["warn", {
-            "namedComponents": "function-declaration",
-            "unnamedComponents": "function-expression"
-        }],
+        "react/function-component-definition": [
+            2, // or "error" to enforce the rule
+            { "namedComponents": "arrow-function" }
+          ],
         "react/jsx-filename-extension": [
             2,
             {
